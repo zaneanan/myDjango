@@ -3,12 +3,40 @@
 <head>
 	<meta charset="UTF-8">
     <title>myDjango</title>
-    <!-- jQuery -->
-    <script src="/sources/jQuery/jquery-3.4.1.min.js"></script>
-    <!-- bootstrap -->
-    <script src="/sources/bootstrap/bootstrap-4.3.1/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="/static/css/base.css">
+    {% block import %}
+    <!-- 公用區 -->
+    {% endblock import %}
 </head>
 <body>
+        <div class="col-12 basicTitle">
+                <div class="col-2 basicTitleUsername">
+                    C.A. - LIN
+                </div>
+                <div class="col-10">
+                    <nav aria-label="breadcrumb" class="basicTitleList">
+                      <ol class="breadcrumb basicTitleList">
+                        <li class="basicTitleListText ">myblog</li>
+                        <li class="basicTitleListText">notes</li>
+                      </ol>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="col-12 basicContent">
+                {% block body %}
+                    <!-- 公共區 -->
+                {% endblock body %}
+            </div>
+            <div class="col-12 basicFooter">
+                C.A. Lin<, xup65k60827@hotmail.com
+            </div>
 </body>
 </html>
 

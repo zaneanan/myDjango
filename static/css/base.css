@@ -1,0 +1,62 @@
+.basicTitle{
+    float: left;
+    height: 10vh; 
+    background-color: #2E2D2D;
+    color: #fff;		
+    font-weight: bold;
+    text-align: left;
+}
+.basicTitleUsername{
+    float: left;
+    font-size: 26px;
+}
+.basicTitleList{
+    float: left;
+    font-size: 20px;
+    background-color: #2E2D2D;
+    color: #ECE7E7;
+    padding-top: 10px;
+}
+.basicTitleListText{
+    background-color: #2E2D2D;
+    margin-left: 10px;
+    position: relative;
+}
+.basicTitleListText:hover{
+    cursor: pointer;
+    color: #2CABB6;
+
+}
+.basicTitleListText::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #3cefff;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+.basicTitleListText:hover::before{
+
+    transform-origin: bottom left;
+      transform: scaleX(1);
+}
+
+
+/* content area */
+.basicContent{
+    float: left;
+    height: 100vh;
+    background-color: #020202;
+    padding-top: 10px;
+}
+/* footer area */
+.basicFooter{
+    float: left;
+    background-color: #fff;
+    height: 5vh;
+    text-align: center;
+}

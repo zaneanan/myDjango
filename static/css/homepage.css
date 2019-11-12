@@ -1,0 +1,9 @@
+.homepageBlogImageDiv{
+    background-image: url('/static/images/blog.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40vh; 
+    color: lightgoldenrodyellow;
+}
+.myblogImageText{
+}
